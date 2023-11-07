@@ -1,0 +1,133 @@
+<main>
+	<div class="px-5 product-content my-1">
+		<div class="py-3 my-3">
+			<div class="row">
+				<div class="col-sm-12 col-md-7 p-0">
+					<form id="contact-form" class="form-sha px-3 py-3" method="post" action="contact.php" role="form">
+						<div class="messages">
+							<div class="controls">
+								<h4 class="text-center colored-text">Compute Pricing</h4>
+								<div class="row">
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group py-3">
+											<input id="form_name" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="name is required.">
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group py-3">
+											<input id="form_email" type="text" name="phoneNumber" class="form-control" placeholder="phoneNumber" required="required" data-error="Valid email is required.">
+										</div>
+									</div>
+
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group py-3">
+											<select id="form_name" type="text" name="title" class="form-control" placeholder="Title" required="required" data-error="name is required.">
+												<option value="" disabled selected class="default-option">Select Payment Frequency</option>
+												<option value="ANNUALLY">ANNUALLY</option>
+												<option value="SINGLE PREMIUM">SINGLE PREMIUM</option>
+												<option value="MONTHLY">MONTHLY</option>
+												<option value="QUARTERLY">QUARTERLY</option>
+												<option value="ANNUALLY">SEMI-ANNUALLY</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group py-3">
+											<select id="form_name" type="text" name="RemainingYears" class="form-control" required="required" data-error="name is required.">
+												<option value="" disabled selected class="default-option">Select Child Remaining Years</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group py-3">
+											<select id="form_name" type="text" name="title" class="form-control" placeholder="Title" required="required" data-error="name is required.">
+												<option value="" disabled selected class="default-option">Select Calculation Type:</option>
+                                        		<option value="Premium">Premium (What you pay)</option>
+                                        		<option value="Sum Assured">Sum Assured (The coverage amount)</option>
+											</select>
+											</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group py-3">
+											<input id="amount" type="text" name="amount" class="form-control" value="" placeholder="Enter Amount"
+                                               required="required" disabled oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0,10);" data-error="Valid email is required.">
+										</div>
+									</div>
+									<div class="container">
+										<div class="pull-left py-3">
+											<span class="pull-left">
+												<button type="submit" class="btn standard btn-icon-reveal pull-right text-white p-0" href="javascript:;" style="background: #600; position: relative;overflow: hidden" id="calculatePolicyButton">
+													<i class="fa fa-calculator" aria-hidden="true"></i>
+													<span style="color:white;" class="text">Calculate</span>
+												</button>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</form>
+				</div>
+				<div class="col-sm-12 col-md-5">
+					<div class="p-3 bg text-white">
+						<div class="side-content-title">
+							<h5>Tuition Protection</h5>
+						</div>
+						<div class="side-content-body font-size">
+							<p>
+								The Custodian Tuition Protection plan is designed to guarantee the education of pupils and 
+								students in the event of death or total permanent disability as a result of accident of the 
+								parent/guardian/sponsor. It also provides protection in the event of the parent/guardian/sponsor 
+								contracting a named critical illness (as defined in the policy) and limited redundancy. The plan 
+								can only be arranged on a group or individual basis. The plan is open to students in 
+								Nursery/Primary, Secondary and Tertiary Institutions.
+							</p>
+							<h5>FEATURES</h5>
+							<ul class="mb-0">
+								<li class="py-2">
+									A yearly renewal contract
+								</li>
+								<li class="py-2">
+									Arranged on the lives of parents/guardian/sponsor responsible for paying the tuition 
+									fees of the child for the benefit of the child
+								</li>
+								<li class="py-2">
+									When on group basis, it is compulsory for all students in the participating Schools
+								</li>
+							</ul>
+							{{!-- <button class="accordion py-3 d-flex align-items-center bg text-white pl-3">&nbsp;OPtional Cover </button>
+							<div class="panel bg text-white">
+								<h5>FEATURES</h5>
+								<ul class="mb-0">
+									<li class="py-2">
+										A yearly renewal contract
+									</li>
+									<li class="py-2">
+										Arranged on the lives of parents/guardian/sponsor responsible for paying the tuition 
+										fees of the child for the benefit of the child
+									</li>
+									<li class="py-2">
+										When on group basis, it is compulsory for all students in the participating Schools
+									</li>
+								</ul>
+							</div>
+							<button class="accordion py-3 d-flex align-items-center bg text-white pl-3">&nbsp;Additional Benefits</button>
+							<div class="panel bg text-white">
+								<p>
+									Annuity is a contract between you (also known as the annuitant) and the Insurance company / insurer; wherein you (the annuitant) make a
+									lump sum payment or series of payments and in return obtain regular income, beginning either immediately or at future date.
+								</p>
+							</div> --}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
