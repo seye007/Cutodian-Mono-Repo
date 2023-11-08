@@ -21,7 +21,6 @@ export class CapitalBuilder {
     const content = capitalBuilderTemplate({});
     this.targetElement.innerHTML = `${navigation}${breadCrumb}${content}`;
     this.validate();
-    this.chooseCalculationType()
   }  
 
   validate() {
@@ -38,11 +37,4 @@ export class CapitalBuilder {
     });
   }
 
-  chooseCalculationType(){
-    const calculationTypeInput = document.getElementById('calculationType');
-    const amountInput = document.getElementById('amount');
-    calculationTypeInput.addEventListener('click', ()=>{
-      amountInput.disabled = false;
-    });
-  }
 }
