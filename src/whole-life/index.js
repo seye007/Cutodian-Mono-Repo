@@ -21,6 +21,7 @@ export class WholeLife {
     const content = wholelifeTemplate({});
     this.targetElement.innerHTML = `${navigation}${breadCrumb}${content}`;
     this.validate();
+    this.chooseCalculationType();
   }  
 
   validate() {
@@ -34,6 +35,14 @@ export class WholeLife {
           form.submit();
         }
       }
+    });
+  }
+
+  chooseCalculationType(){
+    const calculationTypeInput = document.getElementById('calculationType');
+    const amountInput = document.getElementById('amount');
+    calculationTypeInput.addEventListener('click', ()=>{
+      amountInput.disabled = false;
     });
   }
 }

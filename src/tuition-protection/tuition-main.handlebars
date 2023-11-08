@@ -3,7 +3,7 @@
 		<div class="my-3">
 			<div class="row">
 				<div class="col-sm-12 col-md-7 pt-3">
-					<form id="contact-form" class="form-sha px-3 py-3" method="post" action="contact.php" role="form">
+					<form id="contact-form" class="form-sha px-3 py-3" method="post" role="form">
 						<div class="messages">
 							<div class="controls">
 								<h4 class="text-center colored-text">Compute Pricing</h4>
@@ -19,16 +19,16 @@
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3" style="position: relative;">
-											<select id="paymentFrequency" type="text" name="PaymentFrequency" class="form-control" required="required" data-error="Payment frequency is required;" style="padding-right: 30px;">
-											<option value="" disabled selected class="default-option">Select Payment Frequency</option>
-											<option value="ANNUALLY">ANNUALLY</option>
-											<option value="SINGLE PREMIUM">SINGLE PREMIUM</option>
-											<option value="MONTHLY">MONTHLY</option>
-											<option value="QUARTERLY">QUARTERLY</option>
-											<option value="ANNUALLY">SEMI-ANNUALLY</option>
+										<div class="form-group py-3 relative-position">
+											<select id="paymentFrequency" type="text" name="PaymentFrequency" class="form-control" required="required" data-error="Payment frequency is required;">
+												<option value="" disabled selected class="default-option">Select Payment Frequency</option>
+												<option value="ANNUALLY">ANNUALLY</option>
+												<option value="SINGLE PREMIUM">SINGLE PREMIUM</option>
+												<option value="MONTHLY">MONTHLY</option>
+												<option value="QUARTERLY">QUARTERLY</option>
+												<option value="ANNUALLY">SEMI-ANNUALLY</option>
 											</select>
-											<i class="fa-solid fa-caret-down" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px; pointer-events: none;"></i>
+											<i class="fa-solid fa-caret-down"></i>
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">

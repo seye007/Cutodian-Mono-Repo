@@ -10,18 +10,17 @@
 								<div class="row">
 									<div class="col-sm-12 col-md-6">
 										<div class="form-group py-3">
-											<input id="form_name" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="name is required.">
+											<input id="email" type="email" name="Email" class="form-control" placeholder="Email" required="required" data-error="Email is required.">
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
 										<div class="form-group py-3">
-											<input id="form_email" type="text" name="phoneNumber" class="form-control" placeholder="phoneNumber" required="required" data-error="Valid email is required.">
+											<input id="phoneNumber" type="text" name="PhoneNumber" class="form-control" placeholder="Phone Number" required="required" data-error="Phone number is required.">
 										</div>
 									</div>
-
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
-											<select id="form_name" type="text" name="title" class="form-control" placeholder="Title" required="required" data-error="name is required.">
+										<div class="form-group py-3 relative-position">
+											<select id="paymentFrequency" type="text" name="PaymentFrequency" class="form-control" required="required" data-error="Payment frequency is required.">
 												<option value="" disabled selected class="default-option">Select Payment Frequency</option>
 												<option value="ANNUALLY">ANNUALLY</option>
 												<option value="SINGLE PREMIUM">SINGLE PREMIUM</option>
@@ -29,28 +28,31 @@
 												<option value="QUARTERLY">QUARTERLY</option>
 												<option value="ANNUALLY">SEMI-ANNUALLY</option>
 											</select>
+											<i class="fa-solid fa-caret-down"></i>
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
-											<select id="form_name" type="text" name="RemainingYears" class="form-control" required="required" data-error="name is required.">
-												<option value="" disabled selected class="default-option">Select Child Remaining Years</option>
+										<div class="form-group py-3 relative-position">
+											<select id="policyTerm" type="text" name="PolicyTerm" class="form-control" required="required" data-error="Policy term is required.">
+												<option value="" disabled selected class="default-option">Select Policy Term</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
 												<option value="3">3</option>
 												<option value="4">4</option>
 												<option value="5">5</option>
 											</select>
+											<i class="fa-solid fa-caret-down"></i>
 										</div>
 									</div>
-									<div class="col-sm-12 col-md-12">
+									<div class="col-sm-12 col-md-6">
 										<div class="form-group py-3">
-											<select id="form_name" type="text" name="title" class="form-control" placeholder="Title" required="required" data-error="name is required.">
-												<option value="" disabled selected class="default-option">Select Calculation Type:</option>
-                                        		<option value="Premium">Premium (What you pay)</option>
-                                        		<option value="Sum Assured">Sum Assured (The coverage amount)</option>
-											</select>
-											</div>
+											<input id="premium" type="text" name="Premium" class="form-control" placeholder="Premium" required="required" data-error="Premium is required.">
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="form-group py-3">
+											<input id="sumAssured" type="text" name="SumAssured" class="form-control" placeholder="Sum Assured" required="required" data-error="Sum Assured is required.">
+										</div>
 									</div>
 									<div class="container">
 										<div class="pull-left py-3">
@@ -71,35 +73,26 @@
 				<div class="col-sm-12 col-md-5 pt-3">
 					<div class="p-3 bg text-white">
 						<div class="side-content-title">
-							<h5>Dignity Plan</h5>
+							<h5>CApital Builder</h5>
 						</div>
 						<div class="side-content-body font-size">
 							<p>
-								The Custodian Dignity plan is a joint life policy which pays the dignified lump sum (sum assured) 
-								on first death. The policy is unitized.
+								This contract pays the guaranteed sum assured any time death occurs. Depending on the arrangement, 
+								premium payment may stop at age 60 or 65 while cover is still in force.
 							</p>
 							<h6>FEATURES</h6>
 							<ul class="mb-0">
 								<li class="py-2">
-									Annually renewable
+									Policy term is for a life time
 								</li>
 								<li class="py-2">
-									The sum assured per unit is N400,000.00
+									Mode of premium payment can always be adapted to policyholder’s cash flow
 								</li>
 								<li class="py-2">
-									Premium per unit is N6,000.00
-								</li>
-							</ul>
-							<h6>Benefits</h6>
-							<ul class="mb-0">
-								<li class="py-2">
-									The death benefit provides immediate financial succour for the surviving spouse
+									Minimum and maximum ages at entry are 18 and 65 respectively
 								</li>
 								<li class="py-2">
-									Used for family protection
-								</li>
-								<li class="py-2">
-									Tax advantages
+									Premium payment period stops at age 60 years or 65 years
 								</li>
 							</ul>
 						</div>

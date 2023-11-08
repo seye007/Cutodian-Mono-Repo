@@ -10,16 +10,16 @@
 								<div class="row">
 									<div class="col-sm-12 col-md-6">
 										<div class="form-group py-3">
-											<input id="name" type="email" name="Email" class="form-control" placeholder="Email" required="required" data-error="Email is required.">
+											<input id="email" type="email" name="Email" class="form-control" placeholder="Email" required="required" data-error="Email is required.">
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
 										<div class="form-group py-3">
-											<input id="email" type="text" name="PhoneNumber" class="form-control" placeholder="Phone Number" required="required" data-error="Phone number is required.">
+											<input id="phoneNumber" type="text" name="PhoneNumber" class="form-control" placeholder="Phone Number" required="required" data-error="Phone number is required.">
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
+										<div class="form-group py-3 relative-position">
 											<select id="age" type="text" name="Age" class="form-control"  required="required" data-error="Age is required.">
 												<option value="" disabled selected class="default-option">Select Age</option>
 												<option value="60">60</option>
@@ -29,10 +29,11 @@
 												<option value="64">64</option>
 												<option value="65">65</option>
 											</select>
+											<i class="fa-solid fa-caret-down"></i>
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
+										<div class="form-group py-3 relative-position">
 											<select id="policyTerm" type="text" name="PolicyTerm" class="form-control" required="required" data-error="Policy term is required.">
 												<option value="" disabled selected class="default-option">Select Policy Term</option>
 												<option value="1">1</option>
@@ -41,11 +42,12 @@
 												<option value="4">4</option>
 												<option value="5">5</option>
 											</select>
+											<i class="fa-solid fa-caret-down"></i>
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
-											<select id="paymentFrequency" type="text" name="PaymentFrequency" class="form-control" required="required" data-error="Payment Frequency is required.">
+										<div class="form-group py-3 relative-position">
+											<select id="paymentFrequency" type="text" name="PaymentFrequency" class="form-control" required="required" data-error="Payment frequency is required.">
 												<option value="" disabled selected class="default-option">Select Payment Frequency</option>
 												<option value="ANNUALLY">ANNUALLY</option>
 												<option value="SINGLE PREMIUM">SINGLE PREMIUM</option>
@@ -53,16 +55,18 @@
 												<option value="QUARTERLY">QUARTERLY</option>
 												<option value="ANNUALLY">SEMI-ANNUALLY</option>
 											</select>
+											<i class="fa-solid fa-caret-down"></i>
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
+										<div class="form-group py-3 relative-position">
 											<select id="calculationType" type="text" name="CalculationType" class="form-control"  required="required" data-error="Calculation type is required.">
 												<option value="" disabled selected class="default-option">Select Calculation Type:</option>
                                         		<option value="Premium">Premium (What you pay)</option>
                                         		<option value="Sum Assured">Sum Assured (The coverage amount)</option>
 											</select>
-											</div>
+											<i class="fa-solid fa-caret-down"></i>
+										</div>
 									</div>
 									<div class="container">
 										<div class="pull-left py-3">

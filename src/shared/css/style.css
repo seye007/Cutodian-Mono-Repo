@@ -288,5 +288,16 @@ form input, form select{
     }
 }
 
+.relative-position {
+    position: relative;
+}
+
+.fa-caret-down {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    pointer-events: none;
+}
 
  /*End of Side Content Styles*/

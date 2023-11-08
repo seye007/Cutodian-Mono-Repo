@@ -21,7 +21,7 @@ export class TuitionProtection {
     const content = tuitionProtectionTemplate({});
     this.targetElement.innerHTML = `${navigation}${breadCrumb}${content}`;
     this.validate();
-    this.chooseCalculationType()
+    this.chooseCalculationType();
   }  
 
   validate() {
@@ -45,5 +45,4 @@ export class TuitionProtection {
       amountInput.disabled = false;
     });
   }
-  
 }
