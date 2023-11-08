@@ -1,16 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "../shared/css/style.css";
-import tuitionProtectionTemplate from "./tuition-main.handlebars";
+import wholelifeTemplate from "./whole-life-main.handlebars";
 import navigationTemplate from "../shared/handlebars/nav.handlebars";
 import breadCrumbTemplate from "../shared/handlebars/breadcrumbs.handlebars";
 import { Utility } from '../shared/utility.js';
 
-export class TuitionProtection {
+export class WholeLife {
   constructor(elem){
     this.targetElement = elem;
     this.data = {
-      productName: "Tuition Protection",
+      productName: "Whole Life",
       category: "Life Insurance",
     };
   }
@@ -18,10 +18,9 @@ export class TuitionProtection {
   show() {
     const navigation = navigationTemplate();
     const breadCrumb = breadCrumbTemplate(this.data);
-    const content = tuitionProtectionTemplate({});
+    const content = wholelifeTemplate({});
     this.targetElement.innerHTML = `${navigation}${breadCrumb}${content}`;
     this.validate();
-    this.chooseCalculationType()
   }  
 
   validate() {
@@ -37,13 +36,4 @@ export class TuitionProtection {
       }
     });
   }
-
-  chooseCalculationType(){
-    const calculationTypeInput = document.getElementById('calculationType');
-    const amountInput = document.getElementById('amount');
-    calculationTypeInput.addEventListener('click', ()=>{
-      amountInput.disabled = false;
-    });
-  }
-  
 }

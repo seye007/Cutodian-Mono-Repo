@@ -1,8 +1,8 @@
 <main>
 	<div class="px-5 product-content my-1">
-		<div class="py-3 my-3">
+		<div class="my-3">
 			<div class="row">
-				<div class="col-sm-12 col-md-7 p-0">
+				<div class="col-sm-12 col-md-7 pt-3">
 					<form id="contact-form" class="form-sha px-3 py-3" method="post" action="contact.php" role="form">
 						<div class="messages">
 							<div class="controls">
@@ -10,30 +10,30 @@
 								<div class="row">
 									<div class="col-sm-12 col-md-6">
 										<div class="form-group py-3">
-											<input id="form_name" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="name is required.">
+											<input id="email" type="Email" name="email" class="form-control" placeholder="Email" required="required" data-error="Email is required.">
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
 										<div class="form-group py-3">
-											<input id="form_email" type="text" name="phoneNumber" class="form-control" placeholder="phoneNumber" required="required" data-error="Valid email is required.">
+											<input id="phoneNumber" type="text" name="PhoneNumber" class="form-control" placeholder="Phone Number" required="required" data-error="Phone number is required.">
 										</div>
 									</div>
-
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
-											<select id="form_name" type="text" name="title" class="form-control" placeholder="Title" required="required" data-error="name is required.">
-												<option value="" disabled selected class="default-option">Select Payment Frequency</option>
-												<option value="ANNUALLY">ANNUALLY</option>
-												<option value="SINGLE PREMIUM">SINGLE PREMIUM</option>
-												<option value="MONTHLY">MONTHLY</option>
-												<option value="QUARTERLY">QUARTERLY</option>
-												<option value="ANNUALLY">SEMI-ANNUALLY</option>
+										<div class="form-group py-3" style="position: relative;">
+											<select id="paymentFrequency" type="text" name="PaymentFrequency" class="form-control" required="required" data-error="Payment frequency is required;" style="padding-right: 30px;">
+											<option value="" disabled selected class="default-option">Select Payment Frequency</option>
+											<option value="ANNUALLY">ANNUALLY</option>
+											<option value="SINGLE PREMIUM">SINGLE PREMIUM</option>
+											<option value="MONTHLY">MONTHLY</option>
+											<option value="QUARTERLY">QUARTERLY</option>
+											<option value="ANNUALLY">SEMI-ANNUALLY</option>
 											</select>
+											<i class="fa-solid fa-caret-down" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px; pointer-events: none;"></i>
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
-											<select id="form_name" type="text" name="RemainingYears" class="form-control" required="required" data-error="name is required.">
+										<div class="form-group py-3" style="position: relative;"> 
+											<select id="remainingYears" type="text" name="RemainingYears" class="form-control" required="required" data-error="Remaining years is required.">
 												<option value="" disabled selected class="default-option">Select Child Remaining Years</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -41,21 +41,23 @@
 												<option value="4">4</option>
 												<option value="5">5</option>
 											</select>
+											<i class="fa-solid fa-caret-down" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px; pointer-events: none;"></i>
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
-										<div class="form-group py-3">
-											<select id="form_name" type="text" name="title" class="form-control" placeholder="Title" required="required" data-error="name is required.">
+										<div class="form-group py-3" style="position: relative;">
+											<select id="calculationType" type="text" name="CalculationType" class="form-control" required="required" data-error="Calculation type is required.">
 												<option value="" disabled selected class="default-option">Select Calculation Type:</option>
                                         		<option value="Premium">Premium (What you pay)</option>
                                         		<option value="Sum Assured">Sum Assured (The coverage amount)</option>
 											</select>
+											<i class="fa-solid fa-caret-down" style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px; pointer-events: none;"></i>
 											</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
 										<div class="form-group py-3">
-											<input id="amount" type="text" name="amount" class="form-control" value="" placeholder="Enter Amount"
-                                               required="required" disabled oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0,10);" data-error="Valid email is required.">
+											<input id="amount" type="text" name="Amount" class="form-control" value="" placeholder="Enter Amount"
+                                               required="required" disabled oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0,10);" data-error="Amount is required.">
 										</div>
 									</div>
 									<div class="container">
@@ -74,7 +76,7 @@
 						<div class="clearfix"></div>
 					</form>
 				</div>
-				<div class="col-sm-12 col-md-5">
+				<div class="col-sm-12 col-md-5 pt-3">
 					<div class="p-3 bg text-white">
 						<div class="side-content-title">
 							<h5>Tuition Protection</h5>
